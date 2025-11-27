@@ -3,35 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazing Cabiles</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/109ee48f9f.js" crossorigin="anonymous"></script>
+    <title>AG</title>
 </head>
-<body>
-    <div id="top">
-        <h1>Hi! my name is Amazing Cabiles.</h1>
-        <h2>I'm a Computer Science Student in <a href="https://lspu.edu.ph/">LSPU-SPC</a></h2>
+<body class="bg-zinc-900 font-[Red_Hat_Display] selection:bg-indigo-500 selection:text-white">
+    <div class="text-3xl text-white relative">
+        <div class="flex flex-row gap-10 mt-4 mx-2 justify-center items-center">
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex flex-row gap-10">
+                <a class="hover:text-indigo-500" href="#">Home</a>
+                <a class="hover:text-indigo-500" href="">Projects</a>
+                <a class="hover:text-indigo-500" href="">Contact</a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <div id="menu-btn" class="md:hidden hover:text-indigo-500 cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden flex-col bg-zinc-900 text-white mt-10 p-4 rounded-lg absolute top-0 left-0 w-full h-full text-center z-50">
+            <div class="py-2 hover:text-indigo-500">Home</div>
+            <div class="py-2 hover:text-indigo-500">Projects</div>
+            <div class="py-2 hover:text-indigo-500">Contact</div>
+        </div>
+        <!-- Introduction -->
+        <div class="flex justify-center items-center mt-10">
+            <div class="text-white text-xl bg-zinc-900 p-4 w-full max-w-[400px] md:max-w-[600px] text-center md:text-justify">
+                <div class="bg-zinc-950 block max-w-2xl p-6 rounded-xl shadow-xs hover:bg-neutral-secondary-medium">
+                    <h5 class="mb-3 text-2xl font-bold tracking-tight text-heading leading-8">Hi, I'm Amazing Grace Cabiles</h5>
+                    <p class="text-body">I'm a Computer Science student in Laguna State Polytechnic University - San Pablo City</p>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Accordion -->
+        <div class="flex justify-center items-center mt-10">
+            <div class="text-white text-xl bg-zinc-900 p-4 w-full max-w-[400px] md:max-w-[600px] text-center md:text-justify">
+                <div class="bg-zinc-950 text-left block max-w-2xl p-6 rounded-xl shadow-xs hover:bg-neutral-secondary-medium">
+                        <h2 class="font-bold text-2xl mb-2">Skills</h2>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Data and Visualization
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">Microsoft Excel and PowerBI</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Programming Languages
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">C#, Java, Python, JavaScript</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Tech Stacks
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">HTML and Tailwind CSS</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            SQL
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">MySQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="ProjectsId">
-        <h2><a href="https://github.com/aaazezeze1/Final-Project-ITEC-102">Cube Escape! - "Try to Evade and Escape"</a></h2>
-        <h2 class="alignLeft">C# Console Game</h2>
-        <h2 class="alignRight">2023</h2>
-    </div>
-    <div id="ProjectsId">
-        <h2><a href="https://github.com/aaazezeze1/Cube-Escape-3D">Cube Escape 3D</a></h2>
-        <h2 class="alignLeft">C#, Unity3D</h2>
-        <h2 class="alignRight">2024</h2>
-    </div>
-    <div id="ProjectsId">
-        <h2><a href="https://github.com/aaazezeze1/BeSMART">BeSMART Notes App</a></h2>
-        <h2 class="alignLeft">C#, Windows Form</h2>
-        <h2 class="alignRight">2024</h2>
-    </div>
-    <div id="ContactId">
-        <a href="https://github.com/aaazezeze1/" target="_blank"><button>Github</button></a>&nbsp;&nbsp;&nbsp;
-        <a href="#top"><button>Back To Top</button></a>
-    </div>
+    <!-- JavaScript -->
+    <script>
+        // Code for Hamburger Menu
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Code for Accordion
+        var accord = document.getElementsByClassName("accordion");
+
+        for (var i = 0; i < accord.length; i++) {
+            accord[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                panel.classList.toggle("hidden"); // Tailwind toggle
+            });
+        }
+
+    </script>
 </body>
 </html>
