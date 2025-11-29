@@ -18,8 +18,8 @@
         <div class="flex flex-row gap-10 mt-4 mx-2 justify-center items-center">
             <!-- Desktop Menu -->
             <div class="hidden md:flex flex-row gap-10">
-                <a class="hover:text-indigo-500" href="#">Home</a>
-                <a class="hover:text-indigo-500" href="">Projects</a>
+                <a class="hover:text-indigo-500" href="home.html">Home</a>
+                <a class="hover:text-indigo-500" href="projects.html">Projects</a>
                 <a class="hover:text-indigo-500" href="">Contact</a>
             </div>
             <!-- Mobile Hamburger -->
@@ -29,9 +29,9 @@
         </div>
         <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden flex-col bg-zinc-900 text-white mt-10 p-4 rounded-lg absolute top-0 left-0 w-full h-full text-center z-50">
-            <div class="py-2 hover:text-indigo-500">Home</div>
-            <div class="py-2 hover:text-indigo-500">Projects</div>
-            <div class="py-2 hover:text-indigo-500">Contact</div>
+            <a class="hover:text-indigo-500 block py-2" href="home.html">Home</a><br>
+            <a class="hover:text-indigo-500 block py-2" href="projects.html">Projects</a><br>
+            <a class="hover:text-indigo-500 block py-2" href="">Contact</a>
         </div>
         <!-- Introduction -->
         <div class="flex justify-center items-center mt-10">
@@ -43,68 +43,55 @@
             </div>
         </div>
         <!-- Skill Accordion -->
-        <div class="flex justify-center items-center mt-10">
+        <div class="flex justify-center items-center mt-2">
             <div class="text-white text-xl bg-zinc-900 p-4 w-full max-w-[400px] md:max-w-[600px] text-center md:text-justify">
                 <div class="bg-zinc-950 text-left block max-w-2xl p-6 rounded-xl shadow-xs hover:bg-neutral-secondary-medium">
                         <h2 class="font-bold text-2xl mb-2">Skills</h2>
                         <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
-                            Data and Visualization
+                            Frontend Development
                             <i class="fa-solid fa-v text-sm"></i>
                         </button>
                         <div class="panel hidden overflow-hidden">
-                            <p class="mt-2 text-center">Microsoft Excel and PowerBI</p>
+                            <p class="mt-2 text-center">HTML, Tailwind CSS, JavaScript, Java Swing, C# Winforms</p>
                         </div>
                         <br>
                         <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
-                            Programming Languages
+                            Backend Development
                             <i class="fa-solid fa-v text-sm"></i>
                         </button>
                         <div class="panel hidden overflow-hidden">
-                            <p class="mt-2 text-center">C#, Java, Python, JavaScript</p>
+                            <p class="mt-2 text-center">PHP, C#, Java, Python</p>
                         </div>
                         <br>
                         <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
-                            Tech Stacks
-                            <i class="fa-solid fa-v text-sm"></i>
-                        </button>
-                        <div class="panel hidden overflow-hidden">
-                            <p class="mt-2 text-center">HTML and Tailwind CSS</p>
-                        </div>
-                        <br>
-                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
-                            SQL
+                            Database & Storage
                             <i class="fa-solid fa-v text-sm"></i>
                         </button>
                         <div class="panel hidden overflow-hidden">
                             <p class="mt-2 text-center">MySQL</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Data Analytics & BI
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">Microsoft Excel & Power BI</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Tools & Version Control
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">Git & GitHub</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- JavaScript -->
-    <script>
-        // Code for Hamburger Menu
-        const menuBtn = document.getElementById("menu-btn");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        menuBtn.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-
-        // Code for Accordion
-        var accord = document.getElementsByClassName("accordion");
-
-        for (var i = 0; i < accord.length; i++) {
-            accord[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-
-                var panel = this.nextElementSibling;
-                panel.classList.toggle("hidden"); // Tailwind toggle
-            });
-        }
-
-    </script>
+    <!-- Load JS -->
+    <script src="script.js"></script>
 </body>
 </html>
