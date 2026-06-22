@@ -20,3 +20,4 @@
 
 ### Technologies I work with:
 - TypeScript, Next.js, React, Express.js, Tailwind CSS, Drizzle ORM, MySQL
+- Figma, Microsoft Excel, Microsoft PowerBI
