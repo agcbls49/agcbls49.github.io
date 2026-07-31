@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/109ee48f9f.js" crossorigin="anonymous"></script>
+    <title>AG</title>
+</head>
+<body class="bg-zinc-900 font-[Red_Hat_Display] selection:bg-indigo-500 selection:text-white">
+    <div class="text-3xl text-white relative">
+        <div class="flex flex-row gap-10 mt-4 mx-2 justify-center items-center">
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex flex-row gap-10">
+                <a class="hover:text-indigo-500" href="index.html">Home</a>
+                <a class="hover:text-indigo-500" href="projects.html">Projects</a>
+                <a class="hover:text-indigo-500" href="about.html">Contact</a>
+            </div>
+            <!-- Mobile Hamburger -->
+            <div id="menu-btn" class="md:hidden hover:text-indigo-500 cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden flex-col bg-zinc-900 text-white mt-10 p-4 rounded-lg absolute top-0 left-0 w-full h-full text-center z-50">
+            <a class="hover:text-indigo-500 block py-2" href="index.html">Home</a><br>
+            <a class="hover:text-indigo-500 block py-2" href="projects.html">Projects</a><br>
+            <a class="hover:text-indigo-500 block py-2" href="about.html">Contact</a>
+        </div>
+        <!-- Introduction -->
+        <div class="flex justify-center items-center mt-10">
+            <div class="text-white text-xl bg-zinc-900 p-4 w-full max-w-[400px] md:max-w-[600px] text-center md:text-justify">
+                <div class="bg-zinc-950 block max-w-2xl p-6 rounded-xl shadow-xs hover:bg-neutral-secondary-medium">
+                    <h5 class="mb-3 text-2xl font-bold tracking-tight text-heading leading-8">Hi, I'm Amazing Grace Cabiles</h5>
+                    <p class="text-body">I'm a Computer Science student in Laguna State Polytechnic University - San Pablo City</p>
+                </div>
+            </div>
+        </div>
+        <!-- Skill Accordion -->
+        <div class="flex justify-center items-center mt-2 mb-6">
+            <div class="text-white text-xl bg-zinc-900 p-4 w-full max-w-[400px] md:max-w-[600px] text-center md:text-justify">
+                <div class="bg-zinc-950 text-left block max-w-2xl p-6 rounded-xl shadow-xs hover:bg-neutral-secondary-medium">
+                        <h2 class="font-bold text-2xl mb-2">Skills</h2>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Frontend Development
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">HTML, Tailwind CSS, React JS, Next.js</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Programming Languages
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">TypeScript, Javascript, C#, Java, Python</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Database
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">PostgreSQL, MySQL, Drizzle (ORM)</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Data Analytics & BI
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">Microsoft Excel & Power BI</p>
+                        </div>
+                        <br>
+                        <button class="accordion text-xl w-full flex justify-between items-center px-4 py-2 hover:cursor-pointer hover:text-indigo-500 overflow-hidden">
+                            Tools & Version Control
+                            <i class="fa-solid fa-v text-sm"></i>
+                        </button>
+                        <div class="panel hidden overflow-hidden">
+                            <p class="mt-2 text-center">Git & GitHub</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Load JS -->
+    <script src="script.js"></script>
+</body>
+</html>
