@@ -13,25 +13,13 @@
     <script src="https://kit.fontawesome.com/109ee48f9f.js" crossorigin="anonymous"></script>
     <title>Projects</title>
 </head>
-<body class="bg-zinc-900 font-[Red_Hat_Display] selection:bg-indigo-500 selection:text-white">
+<body class="bg-zinc-950 font-[Red_Hat_Display]">
     <div class="text-3xl text-white relative">
-        <div class="flex flex-row gap-10 mt-4 mx-2 justify-center items-center">
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex flex-row gap-10">
-                <a class="hover:text-indigo-500" href="index.html">Home</a>
-                <a class="hover:text-indigo-500" href="projects.html">Projects</a>
-                <a class="hover:text-indigo-500" href="about.html">Contact</a>
-            </div>
-            <!-- Mobile Hamburger -->
-            <div id="menu-btn" class="md:hidden hover:text-indigo-500 cursor-pointer">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-        <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden flex-col bg-zinc-900 text-white mt-10 p-4 rounded-lg absolute top-0 left-0 w-full h-full text-center z-50">
-            <a class="hover:text-indigo-500 block py-2" href="index.html">Home</a><br>
-            <a class="hover:text-indigo-500 block py-2" href="projects.html">Projects</a><br>
-            <a class="hover:text-indigo-500 block py-2" href="about.html">Contact</a>
+        <div class="fixed bottom-6 right-10">
+            <a href="index.html" class="p-2 rounded-md bg-[#FFDE59] text-2xl text-black font-semibold hover:bg-[#c4ab45]">
+                Back to 
+                <i class="fa-solid fa-house"></i>
+            </a>
         </div>
         <!-- Title -->
         <div class="flex justify-center items-center mt-10">
@@ -43,88 +31,154 @@
         <div class="flex flex-col md:flex-row md:justify-center md:gap-6 mt-6">
             <!-- Card 1 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
-                    <img class="rounded-lg" src="img/StudyWise.png" />
-                    <h5 class="text-2xl font-bold mt-4 text-center">StudyWise</h5>
-                    <p class="mt-3">A simple study session tracker with session history and progress tracking.</p>
-                    <a href="https://studywisetracker.netlify.app/" class="mt-5 bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded-lg flex justify-center">Check It Out!</a>
-                    <a href="https://github.com/agcbls49/StudyWise" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <!-- <img class="rounded-lg" src="img/weather.png" /> -->
+                    <h5 class="text-2xl font-bold mt-4 text-center">Mahal</h5>
+                    <p class="mt-3 text-justify">Mahal is a simple expense tracker. Mahal in Filipino means expensive. Made using 
+                        <span class="font-bold text-[#FFDE59]">
+                            Next.js, React, Tailwind CSS, Express.js, Drizzle ORM and PostgreSQL.
+                        </span>
+                    </p>
+                    <a href="https://github.com/agcbls49/mahal" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
             <!-- Card 2 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
-                    <img class="rounded-lg" src="img/weather.png" />
-                    <h5 class="text-2xl font-bold mt-4 text-center">Easy Breezy Weather</h5>
-                    <p class="mt-3">Simple weather app made using ReactJS, TailwindCSS, Lucide React Icons and TypeScript using the Open Weather Map API.</p>
-                    <a href="https://easy-breezy-weather.netlify.app/" class="mt-5 bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded-lg flex justify-center">Check It Out!</a>
-                    <a href="https://github.com/agcbls49/Easy-Breezy-Weather" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/ToDoNext.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">ToDoNext</h5>
+                    <p class="mt-3 text-justify">A To Do Application that allows users to Create Tasks, Edit Tasks, Delete tasks and many more. Made using 
+                        <span class="font-bold text-[#FFDE59]">
+                            Next.js, React, Tailwind CSS, Express.js, Drizzle ORM and MySQL.
+                        </span>
+                    </p>
+                    <a href="https://github.com/agcbls49/ToDoNext" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
         </div>
         <div class="flex flex-col md:flex-row md:justify-center md:gap-6 mt-6">
             <!-- Card 3 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
-                    <img class="rounded-lg" src="img/PokeFetch.png" />
-                    <h5 class="text-2xl font-bold mt-4 text-center">PokeFetch</h5>
-                    <p class="mt-3">A website to look at short and simple details of Pokemons. Made using HTML, Tailwind CSS and Javascript. Deployed in Netlify.</p>
-                    <a href="https://simplepokefetch.netlify.app/" class="mt-5 bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded-lg flex justify-center">Check It Out!</a>
-                    <a href="https://github.com/agcbls49/PokeFetch" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/StudyWise.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">StudyWise</h5>
+                    <p class="mt-3 text-justify">A simple study session tracker with session history and progress tracking. Made using
+                        <span class="font-bold text-[#FFDE59]">
+                            Next.js, React, Tailwind CSS and TypeScript
+                        </span>
+                        with Local Storage.
+                    </p>
+                    <a href="https://studywisetracker.netlify.app/" class="mt-5 bg-[#FFDE59] hover:bg-[#c4ab45] font-bold text-black py-2 px-4 rounded-lg flex justify-center">Check It Out!</a>
+                    <a href="https://github.com/agcbls49/StudyWise" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
             <!-- Card 4 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
-                    <img class="rounded-lg" src="img/ctrl+safe.png" />
-                    <h5 class="text-2xl font-bold mt-4 text-center">Ctrl + Safe</h5>
-                    <p class="mt-3">Automated Detection of Hate Speech and Cyberbullying in Social Media Through Machine Learning</p>
-                    <a href="https://github.com/agcbls49/Ctrl-Safe" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/Weather.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">Easy Breezy Weather</h5>
+                    <p class="mt-3 text-justify">Simple weather app made using 
+                        <span class="font-bold text-[#FFDE59]">
+                            React, Tailwind CSS and TypeScript
+                        </span>
+                        using the Open Weather Map API.
+                    </p>
+                    <a href="https://easy-breezy-weather.netlify.app/" class="mt-5 bg-[#FFDE59] hover:bg-[#c4ab45] font-bold text-black py-2 px-4 rounded-lg flex justify-center">Check It Out!</a>
+                    <a href="https://github.com/agcbls49/Easy-Breezy-Weather" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
         </div>
         <div class="flex flex-col md:flex-row md:justify-center md:gap-6 mt-6">
             <!-- Card 5 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
-                    <img class="rounded-lg" src="img/SMS.png" />
-                    <h5 class="text-2xl font-bold mt-4 text-center">SMS</h5>
-                    <p class="mt-3">A CRUD website for managing students with AI drop out predicition made using Python & Django. 
-                        It uses the following algorithms: <br> Linear Search (searching the tables)
-                        Quick Sort (sort by buttons) <br>
-                        KNN Algorithm (SMART Analytics)
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/PokeFetch.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">PokeFetch</h5>
+                    <p class="mt-3 text-justify">A website to look at short and simple details of Pokemons. Made using
+                        <span class="font-bold text-[#FFDE59]">
+                            HTML, Tailwind CSS and Javascript. 
+                        </span>
+                        using the PokeApi and deployed in Netlify.
                     </p>
-                    <a href="https://github.com/agcbls49/SMS" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                    <a href="https://simplepokefetch.netlify.app/" class="mt-5 bg-[#FFDE59] hover:bg-[#c4ab45] font-bold text-black py-2 px-4 rounded-lg flex justify-center">Check It Out!</a>
+                    <a href="https://github.com/agcbls49/PokeFetch" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
             <!-- Card 6 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
-                    <img class="rounded-lg" src="img/BeSMART.png" />
-                    <h5 class="text-2xl font-bold mt-4 text-center">BeSMART</h5>
-                    <p class="mt-3">A user-friendly notes application that allows users to take notes efficiently, manage their schedule and tasks, as well as review their educational materials.</p>
-                    <a href="https://github.com/agcbls49/BeSMART" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/Ctrl+safe.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">Ctrl + Safe</h5>
+                    <p class="mt-3 text-justify">Automated Detection of Hate Speech and Cyberbullying in Social Media Through Machine Learning.
+                        <span class="font-bold text-[#FFDE59]">
+                            My task was to create the Frontend of the website.
+                        </span>
+                    </p>
+                    <a href="https://github.com/agcbls49/Ctrl-Safe" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row md:justify-center md:gap-6 mt-6 mb-10">
+        <div class="flex flex-col md:flex-row md:justify-center md:gap-6 mt-6">
             <!-- Card 7 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
-                    <img class="rounded-lg" src="img/College.png" />
-                    <img class="rounded-lg" src="img/CCS.png" />
-                    <h5 class="text-2xl font-bold mt-4 text-center">Colleges in LSPU</h5>
-                    <p class="mt-3">A Java Swing program that shows details about these specific colleges (CCS, CBAA, COE, CIT and CTE), in Laguna State Polytechnic University San Pablo Campus.</p>
-                    <a href="https://github.com/agcbls49/COLLEGES-IN-LSPU" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/SMS.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">SMS</h5>
+                    <p class="mt-3 text-justify">A CRUD website for managing students with AI drop out predicition made using HTML, Bootstrap, Javascript, and Python Django.
+                        <span class="font-bold text-[#FFDE59]">
+                            My task was to create the Frontend of the website.
+                        </span>
+                        <br><br>
+                        It uses the following algorithms: <br> 
+                        1. Linear Search (searching the tables)
+                        2. Quick Sort (sort by buttons) <br>
+                        3. KNN Algorithm (SMART Analytics)
+                    </p>
+                    <a href="https://github.com/agcbls49/SMS" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
             <!-- Card 8 -->
             <div class="flex justify-center mb-6 md:mb-0">
-                <div class="text-white text-xl bg-zinc-950 p-6 rounded-xl max-w-[400px] w-full">
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/BeSMART.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">BeSMART</h5>
+                    <p class="mt-3 text-justify">A user-friendly 
+                        <span class="font-bold text-[#FFDE59]">
+                            C# Windows Form
+                        </span>
+                        notes application that allows users to take notes efficiently, manage their schedule and tasks, as well as review their educational materials.
+                    </p>
+                    <a href="https://github.com/agcbls49/BeSMART" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-center md:gap-6 mt-6 mb-10">
+            <!-- Card 9 -->
+            <div class="flex justify-center mb-6 md:mb-0">
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
+                    <img class="rounded-lg" src="img/College.png" />
+                    <h5 class="text-2xl font-bold mt-4 text-center">Colleges in LSPU</h5>
+                    <p class="mt-3 text-justify">A 
+                        <span class="font-bold text-[#FFDE59]">
+                            Java Swing
+                        </span>
+                        program with random theme switching that shows details about these specific colleges (CCS, CBAA, COE, CIT and CTE), in Laguna State Polytechnic University San Pablo Campus.
+                    </p>
+                    <a href="https://github.com/agcbls49/COLLEGES-IN-LSPU" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="flex justify-center mb-6 md:mb-0">
+                <div class="text-white text-xl p-6 rounded-xl max-w-[400px] w-full">
                     <img class="rounded-lg" src="img/EV.png" />
                     <h5 class="text-2xl font-bold mt-4 text-center">United States of America EV Population 2025</h5>
-                    <p class="mt-3">Single page PowerBI visualization showing the 2025 EV Population of the United States of America from the State of Washington's Dataset.</p>
-                    <a href="https://github.com/agcbls49/USA-EV-Population-2025" class="mt-5 bg-indigo-500 hover:bg-indigo-950 text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
+                    <p class="mt-3 text-justify">Single page 
+                        <span class="font-bold text-[#FFDE59]">
+                            PowerBI
+                        </span>
+                        visualization showing the 2025 EV Population of the United States of America from the State of Washington's Dataset.
+                    </p>
+                    <a href="https://github.com/agcbls49/USA-EV-Population-2025" class="mt-5 bg-[#8C52FF] hover:bg-[#693dbf] text-white py-2 px-4 rounded-lg flex justify-center">More Details</a>
                 </div>
             </div>
         </div>
